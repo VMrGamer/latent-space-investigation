@@ -7,14 +7,16 @@
 
 ## Table of Contents
 
-1. [Manifest](#manifest)
-2. [Installation](#installation)
-3. [Support](#support)
-4. [Road Map](#road-map)
-5. [How to contribute](#how-to-contribute)
-6. [Acknowledgements](#acknowledgements)
-7. [License](#license)
-8. [Project Status](#project-status)
+1.  [Manifest](#manifest)
+2.  [Visuals](#visuals)
+3.  [Installation](#installation)
+4.  [Usage](#usage)
+5.  [Support](#support)
+6.  [Road Map](#road-map)
+7.  [How to contribute](#how-to-contribute)
+8.  [Acknowledgements](#acknowledgements)
+9.  [License](#license)
+10. [Project Status](#project-status)
 
 
 ## Manifest
