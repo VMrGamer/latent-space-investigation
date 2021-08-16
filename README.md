@@ -105,8 +105,6 @@ pip install runx
 ```
 
 
-
-
 ## Support
 
 - Contact: [email me](v.mr.gamer@gmail.com)
@@ -119,6 +117,7 @@ pip install runx
 - We can expand the work to Autoencoders and Variational Autoencoders
 - Ambitiously, expand the work to Transformer Networks and Manifold Learners
 - Superficially, Work on expanding the project into a library of sorts
+
 
 ## How to contribute
 
