@@ -74,6 +74,8 @@ pip install notebook
 
 - Finally, it possible to upload the notebooks on Google Colab, which is recommended course but one will need to setup the drive or even the directory structure.
 
+- In addition one can follow and install, [Anaconda Individual Edition](https://www.anaconda.com/products/individual) for ease of access and environment setup. Also it is open source :).
+
 - Also, it is possibe to export the .ipynb files to .py files but it is not tested, but one can raise issues if any.
 
 - There are some parts that may need NVIDIA/apex, it will depend on your choice. 
@@ -103,6 +105,28 @@ sys.path.insert(0,'/content/semantic-segmentation')
 ```bash
 pip install runx
 ```
+
+
+## Usage
+
+- To use jupyter resources you can just open the command propmpt/power shell in Windows or terminal or bash shell in Linux to use the respective resources.
+- For JupyterLab
+
+```bash
+jupyter lab
+```
+
+_You can also visit the [JupyterLab Documentation](https://jupyterlab.readthedocs.io/en/stable/index.html) for more information on how to get started and read the basics._
+
+- For Classic Jupyter Notebooks
+
+```bash
+pip install runx
+```
+
+_You can also visit the [The Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/latest/?badge=latest) Documentation for more information on how to get started and read the basics._
+
+- Or if you have installed [Anaconda Individual Edition](https://www.anaconda.com/products/individual), then just open the Anaconda Prompt and run the respective commands for client.
 
 
 ## Support
