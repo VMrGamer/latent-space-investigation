@@ -11,8 +11,10 @@
 2. [Installation](#installation)
 3. [Support](#support)
 4. [Road Map](#road-map)
-5. [License](#license)
-6. [Project Status](#project-status)
+5. [How to contribute](#how-to-contribute)
+6. [Acknowledgements](#acknowledgements)
+7. [License](#license)
+8. [Project Status](#project-status)
 
 
 ## Manifest
@@ -28,6 +30,14 @@
 - notebooks ---> THE CODE, notebooks in IPython format.
 - modules ---------------> helper modules for the code.
 ```
+
+
+## Visuals
+
+![interpolation](https://miro.medium.com/max/480/0*cYaaF2pFLECohCaI.gif)
+
+Image generation through latent space interpolation. Source: Bilinear interpolation on latent space for random noise vectors. Figure 20
+
 
 ## Installation 
 
@@ -94,10 +104,14 @@ sys.path.insert(0,'/content/semantic-segmentation')
 pip install runx
 ```
 
+
+
+
 ## Support
 
 - Contact: [email me](v.mr.gamer@gmail.com)
 - For issues, raise them on the GitHub itself or mail me on the above emaill
+
 
 ## Road-map
 
@@ -106,11 +120,23 @@ pip install runx
 - Ambitiously, expand the work to Transformer Networks and Manifold Learners
 - Superficially, Work on expanding the project into a library of sorts
 
+## How to contribute
+
+- To get access to contribute directly, please [email me](v.mr.gamer@gmail.com) your GitHub account and references.
+- One can also fork and generate pull requests from it, please do add description to your commits tho!.
+
+
+## Acknowledgements
+
+1. [Jason Brownlee, "How to Explore the GAN Latent Space When Generating Faces"](https://machinelearningmastery.com/how-to-interpolate-and-perform-vector-arithmetic-with-faces-using-a-generative-adversarial-network/)
+2. [Ekin Tiu, "Understanding Latent Space in Machine Learning"](https://towardsdatascience.com/understanding-latent-space-in-machine-learning-de5a7c687d8d)
+
 
 ## License
 
 - The project is Open Source, with MIT License
 - The link to the License can be found [here](https://github.com/VMrGamer/latent-space-investigation/blob/main/LICENSE)
+
 
 ## Project Status
 
