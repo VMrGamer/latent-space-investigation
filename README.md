@@ -20,13 +20,13 @@
 - The list of the top-level files in the project.
 
 ```
+- LICENSE -------> License(MIT-License) to the Project.
 - README.md ------> This markdown file you are reading.
 - img ----------------> images folder for README files.
 - mr_citer ---------------------> The Citation Manager.
 - data ------> The required data or links to access it.
 - notebooks ---> THE CODE, notebooks in IPython format.
 - modules ---------------> helper modules for the code.
-- img ----------------> images folder for README files.
 ```
 
 ## Installation 
