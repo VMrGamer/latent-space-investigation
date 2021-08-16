@@ -48,6 +48,24 @@ pip install jupyterlab
 ```
 here is a little note from, [JupyterLab](https://jupyter.org/install), "If installing using pip install --user, you must add the user-level bin directory to your PATH environment variable in order to launch jupyter lab. If you are using a Unix derivative (FreeBSD, GNU / Linux, OS X), you can achieve this by using export PATH="$HOME/.local/bin:$PATH" command."
 
+- The other option is to use, classic jupyter notebooks, for which again there is mamba, conda and pip
+
+```bash
+mamba install -c conda-forge notebook
+```
+
+```bash
+conda install -c conda-forge notebook
+```
+
+```bash
+pip install notebook
+```
+
+- Finally, it possible to upload the notebooks on Google Colab, which is recommended course but one will need to setup the drive or even the directory structure.
+
+- Also, it is possibe to export the .ipynb files to .py files but it is not tested, but one can raise issues if any.
+
 - There are some parts that may need NVIDIA/apex, it will depend on your choice. 
 
 ```bash
@@ -55,7 +73,26 @@ git clone https://github.com/NVIDIA/apex
 cd apex
 pip install -v --no-cache-dir ./
 ```
+
 _Note that this is for base Windows install and Linux one is pretty simple to follow as it is officially supported_
+
+- Then there is NVIDIA/semantic-segmentation modules, from
+
+```bash
+!git clone https://github.com/NVIDIA/semantic-segmentation.git
+``` 
+
+Which can then be imported in python as followsa
+```python
+import sys
+sys.path.insert(0,'/content/semantic-segmentation')
+```
+
+- Also runx is used as a main to NVIDIA/semantic-segmentation
+
+```bash
+pip install runx
+```
 
 ## Support
 
