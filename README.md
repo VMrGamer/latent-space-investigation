@@ -1,6 +1,6 @@
 # latent-space-investigation (v 1.0)
 
- ![social](https://img.shields.io/github/followers/VMrGamer?style=social)![twitter](https://img.shields.io/twitter/follow/VedantPat?style=social)![languages](https://img.shields.io/github/languages/count/VMrGamer/research-methods-class)
+ ![social](https://img.shields.io/github/followers/VMrGamer?style=social)![twitter](https://img.shields.io/twitter/follow/VedantPat?style=social)![languages](https://img.shields.io/github/languages/count/VMrGamer/latent-space-investigation)
 
  This is a repository for my Research Methodology Course Project on, Investigation of Latent Space in GAN
 
@@ -10,7 +10,7 @@
 1. [Manifest](#manifest)
 2. [Installation](#installation)
 3. [Support](#support)
-4. [Road-map](road-map)
+4. [Road Map](#road-map)
 5. [License](#license)
 6. [Project Status](#project-status)
 
@@ -46,7 +46,7 @@ conda install -c conda-forge jupyterlab
 ```bash
 pip install jupyterlab
 ```
-	- here is a little note from, [JupyterLab](https://jupyter.org/install), "If installing using pip install --user, you must add the user-level bin directory to your PATH environment variable in order to launch jupyter lab. If you are using a Unix derivative (FreeBSD, GNU / Linux, OS X), you can achieve this by using export PATH="$HOME/.local/bin:$PATH" command."
+here is a little note from, [JupyterLab](https://jupyter.org/install), "If installing using pip install --user, you must add the user-level bin directory to your PATH environment variable in order to launch jupyter lab. If you are using a Unix derivative (FreeBSD, GNU / Linux, OS X), you can achieve this by using export PATH="$HOME/.local/bin:$PATH" command."
 
 - There are some parts that may need NVIDIA/apex, it will depend on your choice. 
 
@@ -55,7 +55,7 @@ git clone https://github.com/NVIDIA/apex
 cd apex
 pip install -v --no-cache-dir ./
 ```
-	_Note that this is for base Windows install and Linux one is pretty simple to follow as it is officially supported_
+_Note that this is for base Windows install and Linux one is pretty simple to follow as it is officially supported_
 
 ## Support
 
@@ -73,7 +73,7 @@ pip install -v --no-cache-dir ./
 ## License
 
 - The project is Open Source, with MIT License
-- The link to the License can be found [here]()
+- The link to the License can be found [here](https://github.com/VMrGamer/latent-space-investigation/blob/main/LICENSE)
 
 ## Project Status
 
