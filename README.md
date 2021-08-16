@@ -4,6 +4,31 @@
 
  This is a repository for my Research Methodology Course Project on, Investigation of Latent Space in GAN
 
+
+## Table of Contents
+
+1. [Manifest](#manifest)
+2. [Installation](#installation)
+3. [Support](#support)
+4. [Road-map](road-map)
+5. [License](#license)
+6. [Project Status](#project-status)
+
+
+## Manifest
+
+- The list of the top-level files in the project.
+
+```
+- README.md ------> This markdown file you are reading.
+- img ----------------> images folder for README files.
+- mr_citer ---------------------> The Citation Manager.
+- data ------> The required data or links to access it.
+- notebooks ---> THE CODE, notebooks in IPython format.
+- modules ---------------> helper modules for the code.
+- img ----------------> images folder for README files.
+```
+
 ## Installation 
 
 - You need to have Python installed, I have used the combination of JupyterLab and Google Colab but anything is possibe.
