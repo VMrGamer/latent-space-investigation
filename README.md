@@ -4,6 +4,34 @@
 
  This is a repository for my Research Methodology Course Project on, Investigation of Latent Space in GAN
 
+## Installation 
+
+- You need to have Python installed, I have used the combination of JupyterLab and Google Colab but anything is possibe.
+- There are three options verified by me
+- JupyterLab by Jupyter, for which you can either use mamba, conda or pip
+
+```bash
+mamba install -c conda-forge jupyterlab
+```
+
+```bash
+conda install -c conda-forge jupyterlab
+```
+
+```bash
+pip install jupyterlab
+```
+	- here is a little note from, [JupyterLab](https://jupyter.org/install), "If installing using pip install --user, you must add the user-level bin directory to your PATH environment variable in order to launch jupyter lab. If you are using a Unix derivative (FreeBSD, GNU / Linux, OS X), you can achieve this by using export PATH="$HOME/.local/bin:$PATH" command."
+
+- There are some parts that may need NVIDIA/apex, it will depend on your choice. 
+
+```bash
+git clone https://github.com/NVIDIA/apex
+cd apex
+pip install -v --no-cache-dir ./
+```
+	_Note that this is for base Windows install and Linux one is pretty simple to follow as it is officially supported_
+
 ## Support
 
 - Contact: [email me](v.mr.gamer@gmail.com)
