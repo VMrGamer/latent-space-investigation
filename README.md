@@ -2,7 +2,7 @@
 
  ![social](https://img.shields.io/github/followers/VMrGamer?style=social)![twitter](https://img.shields.io/twitter/follow/VedantPat?style=social)![languages](https://img.shields.io/github/languages/count/VMrGamer/latent-space-investigation)
 
- This is a repository for my Research Methodology Course Project on, Investigation of Latent Space in GAN
+ This is a repository for my Research Methodology Course Project on, Investigation of Latent Space in VAE and GAN
 
 
 ## Table of Contents
@@ -29,7 +29,7 @@
 - img ----------------> images folder for README files.
 - mr_citer ---------------------> The Citation Manager.
 - data ------> The required data or links to access it.
-- notebooks ---> THE CODE, notebooks in IPython format.
+- notebooks ------------> THE CODE NOTEBOOKS and notes.
 - modules ---------------> helper modules for the code.
 ```
 
