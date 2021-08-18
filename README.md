@@ -172,8 +172,8 @@ _You can also visit the [The Jupyter Notebook](https://jupyter-notebook.readthed
 
 ## Road-map
 
-- Our current goal is to get the latent space of a Generative Adversarial Network
-- We can expand the work to Autoencoders and Variational Autoencoders
+- Our current goal is to get the latent space of a Variational AutoEncoders
+- We can expand the work to Autoencoders and Generative Adversarial Networks
 - Ambitiously, expand the work to Transformer Networks and Manifold Learners
 - Superficially, Work on expanding the project into a library of sorts
 
@@ -198,5 +198,5 @@ _You can also visit the [The Jupyter Notebook](https://jupyter-notebook.readthed
 
 ## Project Status
 
-- The project is currently under development, and I'm working on making everything done until now on GANs more organized
+- The project is currently under development, under further notice.
 - Feel free to contribute, generate Pull Requests or raise Issues, it is very much appreciated.

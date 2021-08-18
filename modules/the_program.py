@@ -1,8 +1,21 @@
+from CVAE import CVAE
+from dataset_loader import dataset_loader
+from model_helper import model_helper
+
+from IPython import display
+
+import tensorflow as tf
+import numpy as np
+
+import time
+import glob
+import matplotlib.pyplot as plt
+
 class the_program:
     def __init__(self, dataset='mnist', latent_dimen=2):
         self.data = dataset_loader('mnist')
-        self.model = CVAE(latent_dimen)
-        self.m_helper = model_helper(model, data)
+        self.model = CVAE(latent_dimen, self.data.input_shape)
+        self.m_helper = model_helper(self.model, self.data)
 
     def generate_and_save_images(self, epoch):
         mean, logvar = self.model.encode(self.m_helper.test_sample)

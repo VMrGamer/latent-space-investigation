@@ -2,7 +2,7 @@
 
  ![social](https://img.shields.io/github/followers/VMrGamer?style=social)![twitter](https://img.shields.io/twitter/follow/VedantPat?style=social)![languages](https://img.shields.io/github/languages/count/VMrGamer/latent-space-investigation)
 
- Here, the citations are managed for the Course Project on, Investigation of Latent Space in GAN
+ Here, the citations are managed for the Course Project on, Investigation of Latent Space in Variational AutoEncoders
 
 
 ## Table of Contents
@@ -38,8 +38,8 @@
 
 ## Road-map
 
-- Our current goal is to get the latent space of a Generative Adversarial Network
-- We can expand the work to Autoencoders and Variational Autoencoders
+- Our current goal is to get the latent space of a Variational AutoEncoders
+- We can expand the work to Autoencoders and Generative Adversarial Networks
 - Ambitiously, expand the work to Transformer Networks and Manifold Learners
 - Superficially, Work on expanding the project into a library of sorts
 
@@ -52,5 +52,5 @@
 
 ## Project Status
 
-- The project is currently under development, and I'm working on making everything done until now on GANs more organized
+- The project is currently under development, under further notice.
 - Feel free to contribute, generate Pull Requests or raise Issues, it is very much appreciated.

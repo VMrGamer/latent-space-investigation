@@ -11,7 +11,7 @@ import numpy as np
 #  Convolutional variational autoencoder class
 class CVAE(tf.keras.Model):
 
-    def __init__(self, latent_dimen=2, inp):
+    def __init__(self, latent_dimen=2, inp=(28,28,1)):
         super(CVAE, self).__init__()
         self.latent_dimen = latent_dimen
         self.encoder = tf.keras.Sequential(
@@ -30,7 +30,7 @@ class CVAE(tf.keras.Model):
         self.decoder = tf.keras.Sequential(
             [
                 tf.keras.layers.InputLayer(input_shape=(latent_dimen,)),
-                tf.keras.layers.Dense(units=inp[0]*inp[1]*32, activation=tf.nn.relu),
+                tf.keras.layers.Dense(units=inp[0]*inp[1]*2, activation=tf.nn.relu),
                 tf.keras.layers.Reshape(target_shape=(inp[0]//4, inp[1]//4, 32)),
                 tf.keras.layers.Conv2DTranspose(
                     filters=64, kernel_size=3, strides=2, padding='same',
@@ -40,7 +40,7 @@ class CVAE(tf.keras.Model):
                     activation='relu'),
                 # No activation
                 tf.keras.layers.Conv2DTranspose(
-                    filters=1, kernel_size=3, strides=1, padding='same'),
+                    filters=inp[-1], kernel_size=3, strides=1, padding='same'),
             ]
         )
 

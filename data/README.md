@@ -2,7 +2,7 @@
 
  ![social](https://img.shields.io/github/followers/VMrGamer?style=social)![twitter](https://img.shields.io/twitter/follow/VedantPat?style=social)![languages](https://img.shields.io/github/languages/count/VMrGamer/latent-space-investigation)
 
- Here are all the datasets created for the Course Project on, Investigation of Latent Space in GAN
+ Here are all the datasets and/or created for the Course Project on, Investigation of Latent Space in Variational AutoEncoders
 
 
 ## Table of Contents
@@ -28,7 +28,10 @@
 ## Brief Description
 
 - Please look into the dataset homepages for the best experience
-
+	- MNIST Handwritten Digits
+	- MNIST Fashion
+	- CIFAR 10
+- I am using the tensorflow catalog for this project, you can use any and update the dataset_loader.py under modules
 
 ## Support
 
@@ -50,5 +53,5 @@
 
 ## Project Status
 
-- The project is currently under development, and I'm working on making everything done until now on GANs more organized
+- The project is currently under development, under further notice.
 - Feel free to contribute, generate Pull Requests or raise Issues, it is very much appreciated.
