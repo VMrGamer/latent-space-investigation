@@ -20,7 +20,13 @@
 - The list of the top-level files in the project.
 
 ```
-- README.md ------> This markdown file you are reading.
+- README.md -----------------------> This markdown file you are reading.
+- cifar10_gif.gif ---------------> cifar10 dataset prediction animation.
+- cifar10_latent_space.png --------------> cifar10 dataset latent space.
+- fashion_mnist_gif.gif ---> MNIST Fashion dataset prediction animation.
+- fashion_mnist_latent_space.png --> MNIST Fashion dataset latent space.
+- mnist_gif.gif -------------> MNIST Digit dataset prediction animation.
+- mnist_latent_space.png ------------> MNIST Digit dataset latent space.
 ```
 
 

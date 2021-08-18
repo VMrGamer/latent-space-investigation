@@ -40,6 +40,30 @@
 
 Image generation through latent space interpolation. Source: Bilinear interpolation on latent space for random noise vectors. Figure 20
 
+![mnist_prediction_animation](img/mnist_gif.gif)
+
+MNIST Digit dataset prediction animation.
+
+![mnist_latent_space](img/mnist_latent_space.png)
+
+MNIST Digit dataset latent space.
+
+![cifar10_prediction_animation](img/cifar10_gif.gif)
+
+cifar10 dataset prediction animation.
+
+![cifar10_latent_space](img/cifar10_latent_space.png)
+
+cifar10 dataset latent space.
+
+![mnist_fashion_prediction_animation](img/fashion_mnist_gif.gif)
+
+MNIST Fashion dataset prediction animation.
+
+![mnist_fashion_latent_space](img/fashion_mnist_latent_space.png)
+
+MNIST Fashion dataset latent space.
+
 
 ## Installation 
 
@@ -153,8 +177,8 @@ _You can also visit the [The Jupyter Notebook](https://jupyter-notebook.readthed
 
 ## Acknowledgements
 
-1. [Jason Brownlee, "How to Explore the GAN Latent Space When Generating Faces"](https://machinelearningmastery.com/how-to-interpolate-and-perform-vector-arithmetic-with-faces-using-a-generative-adversarial-network/)
-2. [Ekin Tiu, "Understanding Latent Space in Machine Learning"](https://towardsdatascience.com/understanding-latent-space-in-machine-learning-de5a7c687d8d)
+1. [Ekin Tiu, "Understanding Latent Space in Machine Learning"](https://towardsdatascience.com/understanding-latent-space-in-machine-learning-de5a7c687d8d)
+2. [Tensorflow, "Convolutional Variational Autoencoder"](https://www.tensorflow.org/tutorials/generative/cvae)
 
 
 ## License
