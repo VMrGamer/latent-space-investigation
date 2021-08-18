@@ -38,10 +38,8 @@
 
 ## Road-map
 
-- Our current goal is to get the latent space of a Generative Adversarial Network
-- We can expand the work to Autoencoders and Variational Autoencoders
-- Ambitiously, expand the work to Transformer Networks and Manifold Learners
-- Superficially, Work on expanding the project into a library of sorts
+- Add more visuals to the repo
+- Add references to images not made by me
 
 
 ## License
@@ -52,5 +50,5 @@
 
 ## Project Status
 
-- The project is currently under development, and I'm working on making everything done until now on GANs more organized
+- The project is currently under development, under further notice.
 - Feel free to contribute, generate Pull Requests or raise Issues, it is very much appreciated.

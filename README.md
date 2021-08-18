@@ -2,7 +2,7 @@
 
  ![social](https://img.shields.io/github/followers/VMrGamer?style=social)![twitter](https://img.shields.io/twitter/follow/VedantPat?style=social)![languages](https://img.shields.io/github/languages/count/VMrGamer/latent-space-investigation)
 
- This is a repository for my Research Methodology Course Project on, Investigation of Latent Space in VAE and GAN
+ This is a repository for my Research Methodology Course Project on, Investigation of Latent Space in Variational AutoEncoders
 
 
 ## Table of Contents
@@ -105,6 +105,16 @@ sys.path.insert(0,'/content/semantic-segmentation')
 
 ```bash
 pip install runx
+```
+
+- Finally we are using three libraries that may not be in the usual Development Environment
+
+```bash
+pip install git+https://github.com/tensorflow/docs
+```
+
+```bash
+pip install tensorflow-probability
 ```
 
 
