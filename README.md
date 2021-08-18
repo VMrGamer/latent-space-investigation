@@ -40,31 +40,6 @@
 
 Image generation through latent space interpolation. Source: Bilinear interpolation on latent space for random noise vectors. Figure 20
 
-![mnist_prediction_animation](img/mnist_gif.gif)
-
-MNIST Digit dataset prediction animation.
-
-![mnist_latent_space](img/mnist_latent_space.png)
-
-MNIST Digit dataset latent space.
-
-![cifar10_prediction_animation](img/cifar10_gif.gif)
-
-cifar10 dataset prediction animation.
-
-![cifar10_latent_space](img/cifar10_latent_space.png)
-
-cifar10 dataset latent space.
-
-![mnist_fashion_prediction_animation](img/fashion_mnist_gif.gif)
-
-MNIST Fashion dataset prediction animation.
-
-![mnist_fashion_latent_space](img/fashion_mnist_latent_space.png)
-
-MNIST Fashion dataset latent space.
-
-
 ## Installation 
 
 - You need to have Python installed, I have used the combination of JupyterLab and Google Colab but anything is possibe.
@@ -153,6 +128,30 @@ pip install runx
 _You can also visit the [The Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/latest/?badge=latest) Documentation for more information on how to get started and read the basics._
 
 - Or if you have installed [Anaconda Individual Edition](https://www.anaconda.com/products/individual), then just open the Anaconda Prompt and run the respective commands for client.
+
+- MNIST Digit dataset prediction animation.
+
+![mnist_prediction_animation](img/mnist_gif.gif)
+
+- MNIST Digit dataset latent space.
+
+![mnist_latent_space](img/mnist_latent_space.png)
+
+- cifar10 dataset prediction animation.
+
+![cifar10_prediction_animation](img/cifar10_gif.gif)
+
+- cifar10 dataset latent space.
+
+![cifar10_latent_space](img/cifar10_latent_space.png)
+
+- MNIST Fashion dataset prediction animation.
+
+![mnist_fashion_prediction_animation](img/fashion_mnist_gif.gif)
+
+- MNIST Fashion dataset latent space.
+
+![mnist_fashion_latent_space](img/fashion_mnist_latent_space.png)
 
 
 ## Support
