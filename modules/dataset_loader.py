@@ -43,6 +43,8 @@ class dataset_loader:
             self.train_dataset = (tf.data.Dataset.from_tensor_slices(self.train_images).shuffle(self.train_size).batch(self.batch_size))
             self.test_dataset = (tf.data.Dataset.from_tensor_slices(self.test_images).shuffle(self.test_size).batch(self.batch_size))
 
+    ## A function to prepare images for input
+    #  normalize, reshape and convert dtype to float32
     def prep(self, imgs):
         norm_img = imgs.reshape((imgs.shape[0], self.input_shape[0], self.input_shape[1], self.input_shape[2])) / 255.
         return np.where(norm_img > .5, 1.0, 0.0).astype('float32')
