@@ -10,10 +10,12 @@ import numpy as np
 ## @title CVAE
 #  Convolutional variational autoencoder class
 class CVAE(tf.keras.Model):
-
+    ## constructor
     def __init__(self, latent_dimen=2, inp=(28,28,1)):
         super(CVAE, self).__init__()
+        #dimensions of the latent space
         self.latent_dimen = latent_dimen
+        #the encoder network
         self.encoder = tf.keras.Sequential(
             [
                 tf.keras.layers.InputLayer(input_shape=inp),
@@ -26,7 +28,8 @@ class CVAE(tf.keras.Model):
                 tf.keras.layers.Dense(latent_dimen + latent_dimen),
             ]
         )
-
+        
+        #the decoder network
         self.decoder = tf.keras.Sequential(
             [
                 tf.keras.layers.InputLayer(input_shape=(latent_dimen,)),
@@ -44,20 +47,22 @@ class CVAE(tf.keras.Model):
             ]
         )
 
+    ## function to sample back from decoder
     @tf.function
     def sample(self, eps=None):
         if eps is None:
             eps = tf.random.normal(shape=(100, self.latent_dimen))
         return self.decode(eps, apply_sigmoid=True)
 
+    ## function to encode data onto Latent space
     def encode(self, x):
-        mean, logvar = tf.split(self.encoder(x), num_or_size_splits=2, axis=1)
-        return mean, logvar
+        return tf.split(self.encoder(x), num_or_size_splits=2, axis=1)
 
     def reparameterize(self, mean, logvar):
         eps = tf.random.normal(shape=mean.shape)
         return eps * tf.exp(logvar * .5) + mean
 
+    ## function to decode latent space vars
     def decode(self, z, apply_sigmoid=False):
         logits = self.decoder(z)
         if apply_sigmoid:
