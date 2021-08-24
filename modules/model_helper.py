@@ -1,7 +1,21 @@
 ## @package modules
-#  Model function helper
+# Model function helper
+# Adapted from TensorFlow Tutorial, Convolutional Variational Autoencoders
+# https://github.com/tensorflow/docs/blob/master/site/en/tutorials/generative/cvae.ipynb
 #
+# LICENSE
+# @title Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
 #
+# https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
 
 import tensorflow as tf
 import numpy as np
@@ -15,8 +29,8 @@ import PIL
 
 ## @title model_helper
 #  Convolutional variational autoencoder class
-
 class model_helper:
+    ## constructor
     def __init__(self, model, data, epochs=10, latent_dimen=2, n_ex = 16, optimizer=None):
         self.model = model
 
@@ -43,12 +57,14 @@ class model_helper:
         for test_batch in data.test_dataset.take(1):
             self.test_sample = test_batch[0:n_ex, :, :, :]
 
+    ## function to compute log norm
     def log_normal_pdf(self, sample, mean, logvar, raxis=1):
         log2pi = tf.math.log(2. * np.pi)
         return tf.reduce_sum(
             -.5 * ((sample - mean) ** 2. * tf.exp(-logvar) + logvar + log2pi),
             axis=raxis)
 
+    ## function to compute cross entropy loss
     def compute_loss(self, x):
         mean, logvar = self.model.encode(x)
         z = self.model.reparameterize(mean, logvar)
@@ -59,6 +75,7 @@ class model_helper:
         logqz_x = self.log_normal_pdf(z, mean, logvar)
         return -tf.reduce_mean(logpx_z + logpz - logqz_x)
 
+    ## function to perform training
     @tf.function
     def train_step(self, x):
         """Executes one training step and returns the loss.
@@ -71,6 +88,7 @@ class model_helper:
         gradients = tape.gradient(loss, self.model.trainable_variables)
         self.optimizer.apply_gradients(zip(gradients, self.model.trainable_variables))
 
+    ## function to decode and plot latent space
     def plot_latent_images(self, n):
         """Plots n x n digit images decoded from the latent space."""
 
