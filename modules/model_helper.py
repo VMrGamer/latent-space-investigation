@@ -95,7 +95,7 @@ class model_helper:
         norm = tfp.distributions.Normal(0, 1)
         grid_x = norm.quantile(np.linspace(0.05, 0.95, n))
         grid_y = norm.quantile(np.linspace(0.05, 0.95, n))
-        image_width = data.digit_size*n
+        image_width = self.data.digit_size*n
         image_height = image_width
         image = np.zeros((image_height, image_width))
 
@@ -103,9 +103,9 @@ class model_helper:
             for j, xi in enumerate(grid_y):
                 z = np.array([[xi, yi]])
                 x_decoded = self.model.sample(z)
-                digit = tf.reshape(x_decoded[0], (data.digit_size, data.digit_size))
-                image[i * data.digit_size: (i + 1) * data.digit_size,
-                        j * data.digit_size: (j + 1) * data.digit_size] = digit.numpy()
+                digit = tf.reshape(x_decoded[0], (self.data.digit_size, self.data.digit_size))
+                image[i * self.data.digit_size: (i + 1) * self.data.digit_size,
+                        j * self.data.digit_size: (j + 1) * self.data.digit_size] = digit.numpy()
 
         plt.figure(figsize=(10, 10))
         plt.imshow(image, cmap='Greys_r')
