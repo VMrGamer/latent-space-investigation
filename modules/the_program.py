@@ -52,7 +52,7 @@ class the_program:
         plt.savefig('image_at_epoch_{:04d}.png'.format(epoch))
         plt.show()
     
-    ## function for automating tasks 
+    ## function for automating tasks
     def run(self):
         self.generate_and_save_images(0)
 
@@ -71,4 +71,4 @@ class the_program:
                     .format(epoch, elbo, end_time - start_time))
             self.generate_and_save_images(epoch)
 
-            return self
+        return self
