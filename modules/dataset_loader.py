@@ -49,7 +49,7 @@ class dataset_loader:
             if self.convert:
                 self.train_images = np.array([cv2.cvtColor(i, cv2.COLOR_BGR2GRAY) for i in self.train_images])
                 self.test_images = np.array([cv2.cvtColor(i, cv2.COLOR_BGR2GRAY) for i in self.test_images])
-                self.input_shape[2] = 1
+                self.input_shape = (self.input_shape[0],self.input_shape[1],1)
 
             self.train_images = self.prep(self.train_images)
             self.test_images = self.prep(self.test_images)
