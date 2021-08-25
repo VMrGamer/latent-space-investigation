@@ -32,7 +32,7 @@ import matplotlib.pyplot as plt
 class the_program:
     ## constructor
     def __init__(self, dataset='mnist', latent_dimen=2):
-        self.data = dataset_loader('mnist')
+        self.data = dataset_loader(dataset)
         self.model = CVAE(latent_dimen, self.data.input_shape)
         self.m_helper = model_helper(self.model, self.data)
 
