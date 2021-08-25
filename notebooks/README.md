@@ -21,7 +21,11 @@
 - The list of the top-level files in the project.
 
 ```
-- README.md ------> This markdown file you are reading.
+- README.md ------------------------> This markdown file you are reading.
+- cifar10_data_extraction/ ---------> The project site for CIFAR-10 dataset processing
+- fashion_mnist_data_extraction/ ---> The project site for Fashion MNIST dataset processing
+- main_data_extraction/ ------------> The project site for MAIN/DEFAULT dataset processing
+- mnist_data_extraction/ -----------> The project site for MNIST dataset processing
 ```
 
 
